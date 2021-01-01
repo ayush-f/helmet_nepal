@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<form method="POST" action="create">
+    {% csrf_token %}
+    <label>Customer</label>
+    {{form.customer}}
+<!--    <input type="text" id="name" name="name" />-->
+
+    <label>Helmet</label>
+    {{form.helmet}}
+    <input type="submit" value="submit"/>
+</form>
+<!--to active selected tab in sidebar-->
+<script type="text/javascript">
+    $(function () {
+        $('.sidebar').find('.active').removeClass('active');
+        $('#order').addClass('active');
+    });
+</script>
+{% endblock %}

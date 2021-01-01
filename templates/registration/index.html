@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<a href="create" class="btn btn-primary">Create order</a>
+<table class="table table-primary">
+    <tr>
+        <th>ID</th>
+        <th>customer</th>
+        <th>helmet</th>
+    </tr>
+    {% for data in order %}
+    <tr>
+        <td>{{data.order_id}}</td>
+        <td>contact: {{data.customer.contact}}<br/>
+            name: {{data.customer.name}}<br/>
+            address: {{data.customer.address}}
+        </td>
+        {% load static %}
+        <td><img width="100" src="/{{data.ground.image}}"/>
+            {{data.helmet.description}}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+<!--to active selected tab in sidebar-->
+<script type="text/javascript">
+    $(function () {
+        $('.sidebar').find('.active').removeClass('active');
+        $('#order').addClass('active');
+    });
+</script>
+{% endblock %}

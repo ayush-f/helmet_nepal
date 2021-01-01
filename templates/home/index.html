@@ -1,0 +1,284 @@
+
+{% extends 'home/home-layout.html' %}
+{% block home-content %}
+{% load static %}
+    <!--::header part start::-->
+    <header class="main_menu home_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="/"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="menu_icon"><i class="fas fa-bars"></i></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">about</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">contact</a>
+                                </li>
+                                <li class="nav-item"><a href="register" class="nav-link btn btn-outline-success btn-sm" style="margin:5;">Register Customer</a></li>
+                               <li class="nav-item"><a href="/login" class="nav-link btn btn-outline-danger btn-sm" style="margin:5;">Login Admin</a></li>
+                            </ul>
+                        </div>
+                       
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header part end-->
+
+
+
+    <!--::about_us part start::-->
+    <section class="about_us padding_top">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-8">
+                    <div class="about_us_text text-center">
+                        <h5>About Us</h5>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <a href="#" class="btn_2">read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--::about_us part end::-->
+
+    <!-- gallery_part part start-->
+    <section class="gallery_part section_padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-5 offset-lg-2">
+                    <div class="section_tittle">
+                       
+                        <h2>Check out our brands</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="portfolio-filter filters">
+                        <ul>
+                            <li class="active" data-filter="all">All Helmets</li>
+                            <li data-filter="1"> Shark</li>
+                            <li data-filter="2">AGV</li>
+                            <li data-filter="3">Mt Helmets</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="gallery_part_item filtr-container">
+                        <a href="portfolio_details.html" class="img-gal filtr-item" data-category="1"
+                            style="background-image: url('../../static/images/Shark_1.jpg')">
+                            <div class="single_gallery_item">
+                                <div class="single_gallery_item_iner">
+                                    <div class="gallery_item_text">
+                                        <p>Shark Helmets</p>
+                                        <h4>Ride Safe</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="portfolio_details.html" class="img-gal width-1 filtr-item" data-category="2"
+                            style="background-image: url('../../static/images/agv_1.jpg')">
+                            <div class="single_gallery_item">
+                                <div class="single_gallery_item_iner">
+                                    <div class="gallery_item_text">
+                                        <p>AGV Helmets</p>
+                                        <h4>Ride Safe</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="portfolio_details.html" class="img-gal width-2 filtr-item" data-category="3"
+                            style="background-image: url('../../static/images/mt.jpg')">
+                            <div class="single_gallery_item">
+                                <div class="single_gallery_item_iner">
+                                    <div class="gallery_item_text">
+                                        <p>MT Helmets</p>
+                                        <h4>Ride Safe</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="portfolio_details.html" class="img-gal width-1 filtr-item" data-category="1"
+                            style="background-image: url('../../static/images/Shark_2.jpg')">
+                            <div class="single_gallery_item">
+                                <div class="single_gallery_item_iner">
+                                    <div class="gallery_item_text">
+                                        <p>Shark</p>
+                                        <h4>Ride Safe</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="portfolio_details.html" class="img-gal filtr-item" data-category="2"
+                            style="background-image: url('../../static/images/agv_2.jpg')">
+                            <div class="single_gallery_item">
+                                <div class="single_gallery_item_iner">
+                                    <div class="gallery_item_text">
+                                        <p>AGV Helmets</p>
+                                        <h4>Ride Safe</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- gallery_part part end-->
+
+    <!--::pricing part start::-->
+    {% if request.session.customer_id %}
+    <section class="pricing_part section_padding home_page_pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section_tittle">
+                        <p>Buy Product</p>
+                        <h2>pricing plan</h2>
+                    </div>
+                </div>
+            </div>
+            {% for data in helmet %}
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_pricing_part">
+                        <div class="pricing_tittle">
+                            <img src="/static/{{data.image}}" alt="">
+                            <p>{{data.model}}</p>
+                        </div>
+                        <div class="pricing_content">
+                            <h3>${{data.price}}</h3>
+                            <a href="#" class="btn_2">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% else %}
+    <div class="row">
+        <div class="container">
+            <h3>Register as a customer to buy our product</h3>
+        </div>
+    </div>
+    {% endif %}
+    <!--::pricing part end::-->
+    <!--::footer_part start::-->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="single-footer-widget">
+                        <h4>Our Service</h4>
+                        <ul>
+                            <li><a href="#">Car accident</a></li>
+                            <li><a href="#">Personal injury</a></li>
+                            <li><a href="#">Family law</a></li>
+                            <li><a href="#">Bank and financial</a></li>
+                            <li><a href="#">Capital market</a></li>
+                            <li><a href="#">Employment Law</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="single-footer-widget footer_icon">
+                        <h4>Contact Info</h4>
+                        <p>4361 Morningview Lane Artland , Pall Street
+                            Latimer, IA 50452 / 23654</p>
+                        <ul>
+                            <li><a href="#"><i class="ti-mobile"></i>+02 - 32 365 2654</a></li>
+                            <li><a href="#"><i class="ti-email"></i>ariclaw@law.com</a></li>
+                            <li><a href="#"><i class="ti-world"></i> ariclawyerfirm.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="single-footer-widget footer_2">
+                        <h4>Newsletter</h4>
+                        <p>Stay updated with our latest trends see heaven so said place fruit.
+                        </p>
+                        <div class="form-wrap" id="mc_embed_signup">
+                            <form target="_blank"
+                                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                method="get" class="form-inline">
+                                <input class="form-control" name="EMAIL" placeholder="Your Email Address"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '"
+                                    required="" type="email">
+                                <button class="btn btn-default text-uppercase"><i class="ti-angle-right"></i></button>
+                                <div style="position: absolute; left: -5000px;">
+                                    <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value=""
+                                        type="text">
+                                </div>
+
+                                <div class="info"></div>
+                            </form>
+                        </div>
+                        <div class="social_icon">
+                            <a href="#"> <i class="ti-facebook"></i> </a>
+                            <a href="#"> <i class="ti-twitter-alt"></i> </a>
+                            <a href="#"> <i class="ti-instagram"></i> </a>
+                            <a href="#"> <i class="ti-skype"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--::footer_part end::-->
+
+    <!-- jquery plugins here-->
+    <script src="../../static/js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="../../static/js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="../../static/js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="../../static/js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="../../static/js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="../../static/js/jquery.filterizr.min.js"></script>
+    <!-- particles js -->
+    <script src="../../static/js/owl.carousel.min.js"></script>
+    <script src="../../static/js/jquery.nice-select.min.js"></script>
+    <!-- slick js -->
+    <script src="../../static/js/slick.min.js"></script>
+    <script src="../../static/js/swiper.min.js"></script>
+    <script src="../../static/js/jquery.counterup.min.js"></script>
+    <script src="../../static/js/waypoints.min.js"></script>
+    <script src="../../static/js/contact.js"></script>
+    <script src="../../static/js/jquery.ajaxchimp.min.js"></script>
+    <script src="../../static/js/jquery.form.js"></script>
+    <script src="../../static/js/jquery.validate.min.js"></script>
+    <script src="../../static/js/mail-script.js"></script>
+    <!-- custom js -->
+    <script src="../../static/js/custom.js"></script>
+{% endblock %}
